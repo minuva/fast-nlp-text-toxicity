@@ -16,7 +16,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 
-RUN git clone https://huggingface.co/Ngit/MiniLM-L6-toxic-all-labels && rm -rf MiniLM-L6-toxic-all-labels/.git
+RUN git clone https://huggingface.co/Ngit/MiniLM-L6-toxic-all-labels-onnx && rm -rf MiniLM-L6-toxic-all-labels-onnx/.git
 
 COPY . .
 

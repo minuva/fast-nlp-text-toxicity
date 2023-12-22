@@ -17,7 +17,7 @@ class Request(BaseModel):
 
 
 # Toxic cfg
-toxic_model_name = "MiniLM-L6-toxic-all-labels"
+toxic_model_name = "MiniLM-L6-toxic-all-labels-onnx"
 toxic_model = OnnxTransformer(
     toxic_model_name,
 )

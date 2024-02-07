@@ -1,6 +1,6 @@
 # Intro
 
-A simple API server using FastAPI for serving a small and high quality toxicity classification model onnxruntime only for CPU inference to Google Cloud Run.
+A simple API server using FastAPI for serving a small and high quality toxicity classification model with onnxruntime package for CPU inference to Google Cloud Run.
 
 # Install from source
 ```bash

@@ -17,16 +17,13 @@ class Request(BaseModel):
 
 
 # Toxic cfg
-toxic_model_name = "MiniLM-L6-toxic-all-labels-onnx"
+toxic_model_name = "MiniLMv2-toxic-jigsaw-onnx"
 toxic_model = OnnxTransformer(
     toxic_model_name,
 )
 
 t_tokenizer = Tokenizer.from_file(os.path.join(toxic_model_name, "tokenizer.json"))
-t_tokenizer.enable_padding(
-    pad_token="<pad>",
-    pad_id=1,
-)
+t_tokenizer.enable_padding()
 t_tokenizer.enable_truncation(max_length=256)
 
 

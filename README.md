@@ -1,6 +1,6 @@
 # Intro
 
-A simple API server using FastAPI for serving a small and high quality toxicity classification model onnxruntime only for CPU inference.
+A simple API server using FastAPI for serving a small and high quality toxicity classification model onnxruntime only for CPU inference to Google Cloud Run.
 
 # Install from source
 ```bash
@@ -31,9 +31,22 @@ docker build --tag toxic .
 docker run -p 9612:9612 -it toxic
 ```
 
+
+# Deploy to cloun Run
+
+The following commands will deploy the model to Google Cloud Run:
+
+```bash
+gcloud projects create toxic-cloudrun
+gcloud config set project toxic-cloudrun
+docker build --tag gcr.io/toxic-cloudrun/toxicml .
+docker push gcr.io/toxic-cloudrun/toxicml
+gcloud run deploy toxic-ml-app --platform managed --region europe-west3 --image gcr.io/toxic-cloudrun/flowml --service-account yourservice-account --allow-unauthenticated
+```
+
 # Models
 
 | Model | 
 | --- |
-| [Ngit/MiniLM-L6-toxic-all-labels](https://huggingface.co/Ngit/MiniLM-L6-toxic-all-labels)
-| [Ngit/MiniLM-L6-toxic-all-labels-onnx](https://huggingface.co/Ngit/MiniLM-L6-toxic-all-labels-onnx)
+| [minuva/MiniLMv2-toxic-jigsaw](https://huggingface.co/minuva/MiniLMv2-toxic-jigsaw) |
+| [minuva/MiniLMv2-toxic-jigsaw-onnx](https://huggingface.co/minuva/MiniLMv2-toxic-jigsaw-onnx)

@@ -59,5 +59,5 @@ curl -X 'POST' \
 
 | Model | Description |
 | --- | --- |
-| [minuva/MiniLMv2-toxic-jigsaw](https://huggingface.co/minuva/ | MiniLMv2-toxic-jigsaw) | A small and high quality toxicity classification model trained on Jigsaw dataset. |
+| [minuva/MiniLMv2-toxic-jigsaw](https://huggingface.co/minuva/MiniLMv2-toxic-jigsaw) | A small and high quality toxicity classification model trained on Jigsaw dataset. |
 | [minuva/MiniLMv2-toxic-jigsaw-onnx](https://huggingface.co/minuva/MiniLMv2-toxic-jigsaw-onnx) | Quantized ONNX version

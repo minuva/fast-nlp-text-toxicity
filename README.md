@@ -31,6 +31,17 @@ docker build --tag toxic .
 docker run -p 9612:9612 -it toxic
 ```
 
+# Example call
+```bash
+curl -X 'POST' \
+  'http://127.0.0.1:9612/toxicity' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "texts": ["hello", "this is pure trash"]
+}'
+```
+
 # Models
 
 | Model | Description |

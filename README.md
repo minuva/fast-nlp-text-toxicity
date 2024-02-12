@@ -1,11 +1,12 @@
-# Intro
+# Fast text toxicity classification
 
-A simple API server using FastAPI for serving a small and high quality toxicity classification model with onnxruntime package with fast CPU inference.
+An efficient open-source text toxicity classification system built on FastAPI 🚀. It uses a compact and accurate model running on onnxruntime for rapid CPU-based processing. It is an ideal solution for applications requiring fast and reliable toxicity classification without the need for GPU hardware. More details about the model in the [model page](https://huggingface.co/minuva/MiniLMv2-toxic-jigsaw).
+
 
 # Install from source
 ```bash
-git clone https://github.com/minuva/toxicity-prediction-serverless.git
-cd toxicity-prediction-serverless
+git clone https://github.com/minuva/fast-nlp-text-toxicity.git
+cd fast-nlp-text-toxicity
 pip install -r requirements.txt
 ```
 

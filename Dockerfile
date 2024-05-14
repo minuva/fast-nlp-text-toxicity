@@ -16,7 +16,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 
-RUN git clone https://huggingface.co/minuva/MiniLMv2-toxic-jigsaw-onnx && rm -rf MiniLMv2-toxic-jigsaw-onnx/.git
+RUN git clone https://huggingface.co/minuva/MiniLMv2-toxic-jigsaw-lite-onnx && rm -rf MiniLMv2-toxic-jigsaw-lite-onnx/.git
 
 COPY . .
 

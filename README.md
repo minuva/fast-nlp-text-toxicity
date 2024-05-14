@@ -2,6 +2,8 @@
 
 An efficient open-source text toxicity classification system built on FastAPI 🚀. It uses a compact and accurate model running on onnxruntime for rapid CPU-based processing. It is an ideal solution for applications requiring fast and reliable toxicity classification without the need for GPU hardware. More details about the model in the [model page](https://huggingface.co/minuva/MiniLMv2-toxic-jigsaw-lite).
 
+This project functions as the backend supporting the  [toxicity plugin](https://github.com/minuva/ph-toxicity-plugin) designed for use with [PostHog-LLM](https://github.com/postlang/posthog-llm).
+
 
 # Install from source
 ```bash
